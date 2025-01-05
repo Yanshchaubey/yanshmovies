@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YanshMovies</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">
+            <img src="images/logoimage.png" alt="YanshMovies Logo">
+        </div>
+        <div class="loading-animation">
+            <span class="word from-left">Welcome</span>
+            <span class="word from-right">to</span>
+            <span class="word from-top">Yansh</span>
+            <span class="word from-bottom">Movies</span>
+        </div>
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Popup Section -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Welcome to YanshMovies</h2>
+            <button onclick="showMainContent()">Explore Movies</button>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content" id="mainContent">
+        <h1 id="title">Yansh Movies</h1>
+        <h2 id="newMoviesTitle">New Movies</h2>
+
+        <!-- New Movies Section with Images aligned left -->
+        <div class="new-movie-image" id="image1" onclick="openPushpa2()">
+            <img src="images/pushpa2.webp" alt="Pushpa 2 Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image2" onclick="openLink()">
+            <img src="images/leaked.jpg" alt="Leaked Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image3" onclick="openLink()">
+            <img src="images/skanda.jpg" alt="Skanda Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image4" onclick="openLink()">
+            <img src="images/operation love.jpg" alt="Operation Love Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image5" onclick="openLink()">
+            <img src="images/sehzada.jpg" alt="Sehzada Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image6" onclick="openLink()">
+            <img src="images/badmash.jpg" alt="Badmash Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image7" onclick="openLink()">
+            <img src="images/shivam.jpg" alt="Shivam Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image8" onclick="openLink()">
+            <img src="images/hi nanna.jpg" alt="Hi Nanna Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image9" onclick="openLink()">
+            <img src="images/tholi prema.jpg" alt="Tholi Prema Movie Poster">
+        </div>
+        <div class="new-movie-image" id="image10" onclick="openLink()">
+            <img src="images/talaash.jpg" alt="Talaash Movie Poster">
+        </div>
+    </div>
+
+    <!-- Pushpa 2 Interface -->
+    <div class="pushpa2-interface" id="pushpa2Interface">
+        <h1>Pushpa 2</h1>
+        <a href="https://drive.google.com/file/d/1SfRZp6PvhTV7y4579c1lw455R0U3Ao33/view?usp=sharing" target="_blank">
+            Click here to view Pushpa 2
+        </a>
+        <br>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+</body>
+</html>
